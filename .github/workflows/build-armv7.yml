@@ -29,7 +29,7 @@ jobs:
           export CC=arm-linux-gnueabihf-gcc
           ./autogen.sh
           ./configure --host=arm-linux-gnueabihf --prefix=/usr/local
-          make -j\$(nproc)
+          make -j$(nproc)
 
       - name: Archive binary
         uses: actions/upload-artifact@v4
